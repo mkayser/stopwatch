@@ -239,8 +239,11 @@ normally and the × button closes via clean quit rather than minimizing to tray.
 ### Running
 
 ```bash
-pip install PySide6
-python main.py
+uv sync
+uv run stopwatch       # via project.scripts entry
+# or
+uv run python main.py
 ```
 
-No other dependencies are required.
+On Ubuntu GNOME you may also need the appindicator extension (see tray note above)
+before the tray icon appears.
